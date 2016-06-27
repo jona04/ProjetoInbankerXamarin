@@ -1,0 +1,46 @@
+﻿<Properties StartupItem="Droid/Inbanker.Droid.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MyGcmListenerService.cs">
+    <Files>
+      <File FileName="Inbanker/VerPedidoRecebido.xaml.cs" Line="49" Column="1" />
+      <File FileName="Droid/RegistrationIntentService.cs" Line="70" Column="1" />
+      <File FileName="Droid/MyGcmListenerService.cs" Line="101" Column="26" />
+      <File FileName="Droid/MainActivity.cs" Line="59" Column="141" />
+      <File FileName="Inbanker/App.xaml.cs" Line="48" Column="139" />
+      <File FileName="Inbanker/VerPedidosEnviados.xaml.cs" Line="42" Column="1" />
+      <File FileName="Inbanker/PedidosFeitos.xaml.cs" Line="51" Column="188" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjetoInbanker" expanded="True">
+            <Node name="Inbanker" expanded="True">
+              <Node name="Webservice" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="PedidosFeitos.xaml" expanded="True" />
+              <Node name="PedidosRecebidos.xaml" expanded="True" />
+              <Node name="ResultadoSimulador.xaml" expanded="True" />
+              <Node name="VerPedidoRecebido.xaml" expanded="True" />
+              <Node name="VerPedidosEnviados.xaml" expanded="True" />
+            </Node>
+            <Node name="Inbanker.Droid" expanded="True">
+              <Node name="MyGcmListenerService.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jonatas/Dropbox/Projetos Xamarin/ProjetoInbanker/Inbanker/LoginPage.xaml.cs" line="11" column="1" />
+      <Breakpoint file="/Users/jonatas/Dropbox/Projetos Xamarin/ProjetoInbanker/Inbanker/App.xaml.cs" line="25" column="1" />
+      <Breakpoint file="/Users/jonatas/Dropbox/Projetos Xamarin/ProjetoInbanker/Droid/RegistrationIntentService.cs" line="15" column="1" />
+      <Breakpoint file="/Users/jonatas/Dropbox/Projetos Xamarin/ProjetoInbanker/Droid/RegistrationIntentService.cs" line="11" column="1" />
+      <Breakpoint file="/Users/jonatas/Dropbox/Projetos Xamarin/ProjetoInbanker/Droid/VerifyPlayServices.cs" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Inbanker.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FB5C2676-BC72-48D8-B41A-2262F4CC24EC" />
+  <MonoDevelop.Ide.ItemProperties.Inbanker.Droid PreferredExecutionTarget="Android.Nexus_5_API_22_x86" />
+</Properties>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Inbanker.ResultadoSimulador">
+	<ContentPage.Content>
+
+
+		<ScrollView>
+			<StackLayout Padding="10">
+				<StackLayout.Children>
+					<StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+							<Label x:Name="img_user" />
+							<Label x:Name="nome_user" />
+					</StackLayout>
+
+					<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Orientation="Vertical">
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Valor solicitado: " />
+								<Label x:Name="valor_solicitado" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Data de vencimento: " />
+								<Label x:Name="data_vencimento" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Dias para o pagamento: " />
+								<Label x:Name="dias_pagamento" />
+							</StackLayout>
+
+							<StackLayout Orientation="Vertical">
+								<Label Text="Taxa de juros A.M.: 1,99%" />
+								<Label x:Name="valor_juros" />
+							</StackLayout>
+
+							<StackLayout Orientation="Vertical">
+								<Label x:Name="valor_taxa_fixa" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Valor total: R$ " />
+								<Label x:Name="valor_total_pago" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Entry x:Name="senha" IsPassword="true" Placeholder="Informe sua senha..." />
+							</StackLayout>
+
+							<StackLayout x:Name="stack_btn" Orientation="Vertical" VerticalOptions="Center">
+								<StackLayout.Children>
+									<Button x:Name="btn_enviar_pedido" Text="Fazer pedido" />
+								</StackLayout.Children>
+							</StackLayout>
+
+					</StackLayout>
+
+					<StackLayout Orientation="Horizontal">
+						<Label x:Name="lblNome" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+						<Label x:Name="lblNome2" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+						<Label x:Name="lblNome3" />
+					</StackLayout>
+					
+				</StackLayout.Children>
+			</StackLayout>
+		</ScrollView>
+		
+	</ContentPage.Content>
+</ContentPage>

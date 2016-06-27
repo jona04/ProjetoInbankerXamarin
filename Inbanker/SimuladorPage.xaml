@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Inbanker.SimuladorPage">
+	<ContentPage.Content>
+
+		<ScrollView>
+			<StackLayout Padding="10">
+				<StackLayout.Children>
+
+					<StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+							<Image x:Name="img_user" />
+							<Label x:Name="nome_user" />
+					</StackLayout>
+
+					<StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+							<StackLayout Orientation="Vertical" Padding="10,10,10,10">
+								<Label Text="Valor do pedido" />
+									<Picker Title="Selecione o valor" x:Name="valor_pedido" >
+										<Picker.Items>
+											<x:String>20</x:String>
+											<x:String>50</x:String>
+											<x:String>100</x:String>
+											<x:String>Outros valores</x:String>
+										</Picker.Items>
+									</Picker>
+									<!-- <Entry x:Name="valor2" Placeholder="Digite um valor..." /> -->
+							</StackLayout>
+
+							<StackLayout Orientation="Vertical" Padding="10,10,10,10">
+								<Label Text="Previsao para pagamento" />
+								<DatePicker x:Name="date_vencimento"/>
+							</StackLayout>
+
+							<StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10,10,10,10">
+								<StackLayout.Children>
+									<Button x:Name="btn_Verificar" Text="Verificar" />
+								</StackLayout.Children>
+							</StackLayout>
+
+					</StackLayout>
+
+				</StackLayout.Children>
+			</StackLayout>
+		</ScrollView>
+		
+	</ContentPage.Content>
+</ContentPage>

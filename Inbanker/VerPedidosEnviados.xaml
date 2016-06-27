@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Inbanker.VerPedidosEnviados">
+	<ContentPage.Content>
+
+		<ScrollView>
+			<StackLayout Padding="10">
+				<StackLayout.Children>
+					<StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+							<Image x:Name="img_usuario" />
+							<Label x:Name="nome_usuario" />
+					</StackLayout>
+
+					<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Orientation="Vertical">
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Valor solicitado: " />
+								<Label x:Name="valor_solicitado" Text="" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Dias para vencimento: " />
+								<Label x:Name="lbldata_vencimento" Text="" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Dias corridos: " />
+								<Label x:Name="dias_corrido" Text=""/>
+							</StackLayout>
+
+						<StackLayout Orientation="Horizontal">
+								<Label Text="Valor do juros:" />
+								<Label x:Name="valor_juros" Text="" />
+							</StackLayout>
+
+						<StackLayout Orientation="Vertical">
+								<Label x:Name="valor_taxa_fixa" />
+							</StackLayout>
+						
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Valor total: R$ " />
+								<Label x:Name="valor_total_pago" Text="" />
+							</StackLayout>
+
+						<StackLayout Orientation="Horizontal">
+								<Entry x:Name="senha" IsPassword="true" Placeholder="Informe sua senha..." />
+							</StackLayout>
+						
+						<StackLayout Orientation="Horizontal">
+								<Label x:Name="lblNome" />
+							</StackLayout>
+						<StackLayout Orientation="Horizontal">
+								<Label x:Name="lblNome2" />
+							</StackLayout>
+					</StackLayout>
+
+					<StackLayout x:Name="stack_msg">
+						<Label x:Name="msg" />
+					</StackLayout>
+					
+					<StackLayout x:Name="stack_confirm_receb" Orientation="Vertical" HorizontalOptions="Center" IsVisible="false">
+						<Label x:Name="msg_confirm_recb" HorizontalOptions="Center" />
+						<StackLayout Orientation="Horizontal">
+							<Button x:Name="btn_sim" Text="Sim" />
+							<!--<Button x:Name="btn_nao" Text="Nao" />-->
+						</StackLayout>
+					</StackLayout>
+
+					<StackLayout x:Name="stack_solicitar_pag" Orientation="Vertical" HorizontalOptions="Center" IsVisible="false">
+						<Label x:Name="msg_solicitar_pag" HorizontalOptions="Center" />
+						<StackLayout Orientation="Horizontal">
+							<Button x:Name="btn_solicitar_pags" Text="Solicitar Pagamento" />
+						</StackLayout>
+					</StackLayout>
+					
+				</StackLayout.Children>
+			</StackLayout>
+		</ScrollView>
+		
+	</ContentPage.Content>
+</ContentPage>

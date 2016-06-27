@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Inbanker.VerPedidoRecebido">
+	<ContentPage.Content>
+
+
+		<ScrollView>
+			<StackLayout Padding="10">
+				<StackLayout.Children>
+					<StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+							<Image x:Name="img_usuario" />
+							<Label x:Name="nome_usuario" />
+					</StackLayout>
+
+					<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Orientation="Vertical">
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Valor solicitado: " />
+								<Label x:Name="valor_solicitado" />
+							</StackLayout>
+
+							<!--<StackLayout Orientation="Horizontal">
+								<Label Text="Data de vencimento: " />
+								<Label x:Name="data_vencimento" />
+							</StackLayout>-->
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Dias para o pagamento: " />
+								<Label x:Name="dias_pagamento" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Rendimento:" />
+								<Label x:Name="valor_juros" />
+							</StackLayout>
+
+							<StackLayout Orientation="Vertical">
+								<Label x:Name="valor_taxa_fixa" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label Text="Valor total: R$ " />
+								<Label x:Name="valor_total_pago" />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Entry x:Name="senha" IsPassword="true" Placeholder="Informe sua senha..." />
+							</StackLayout>
+
+							<StackLayout Orientation="Horizontal">
+								<Label x:Name="lblNome" />
+							</StackLayout>
+							<StackLayout Orientation="Horizontal">
+								<Label x:Name="lblNome2" />
+							</StackLayout>
+
+					</StackLayout>
+
+					<StackLayout x:Name="stack_btn_acc_pedido" Orientation="Horizontal" VerticalOptions="Center">
+						<StackLayout>
+							<Button x:Name="btn_rejeitar_pedido" Text="Recusar" />
+						</StackLayout>
+						<StackLayout>
+							<Button x:Name="btn_aceitar_pedido" Text="Aceitar" />
+						</StackLayout>
+					</StackLayout>
+
+					<StackLayout x:Name="stack_msg_pedido" IsVisible="false">
+						<Label x:Name="msg_pedido" />
+					</StackLayout>
+						
+					<StackLayout IsVisible="false" x:Name="stack_btn_acc_pagamento" Orientation="Vertical" VerticalOptions="Center">
+						
+						<StackLayout Orientation="Vertical">
+							<Label  x:Name="msg_acc_pagemento" Text="" />
+							<Label Text="Voce confirma o recebimento do valor?" />
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<StackLayout>
+								<Button x:Name="btn_confirmar_pagamento" Text="Sim" />
+							</StackLayout>
+							<StackLayout>
+								<Button x:Name="btn_recusar_pagamento" Text="Nao" />
+							</StackLayout>
+						</StackLayout>
+					</StackLayout>
+
+					
+				</StackLayout.Children>
+			</StackLayout>
+		</ScrollView>
+		
+	</ContentPage.Content>
+</ContentPage>
